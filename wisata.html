@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo and Description</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+    
+        .photo-container {
+            text-align: center;
+        }
+    
+        .photo-container img {
+            width: 100%;
+            max-width: 800px;
+            /* Maximum width for the image */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            /* Smooth transition for zoom effect */
+        }
+    
+        /* Zoom effect on hover */
+        .photo-container img:hover {
+            transform: scale(1.05);
+            /* Slightly zoom in */
+        }
+    
+        .description {
+            margin-top: 15px;
+        }
+    
+        .description h2 {
+            font-size: 2rem;
+            /* Increase title size */
+            margin-bottom: 10px;
+            color: #333;
+        }
+    
+        .description p {
+            font-size: 1.2rem;
+            /* Increase text size */
+            color: #666;
+        }
+    
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff6f9b;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    
+        .back-button:hover {
+            background-color: #ff6f9b;
+            /* Color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="photo-container">
+        <img src="wisata.png" alt="Description Image">
+        <div class="description">
+            <h2>Project 3</h2>
+            <p>This image displays a web page with the theme "Bandung Tourism" with six images of famous tourist destinations in
+            Bandung</p>
+            <a href="index.html" class="back-button">Back</a>
+        </div>
+    </div>
+</body>
+
+</html>
